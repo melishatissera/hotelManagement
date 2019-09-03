@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A929A5AE-4B79-46EC-BFE9-CEF7681AFBBA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>hotelManagement</RootNamespace>
+    <AssemblyName>hotelManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProducts.Designer.cs">
+      <DependentUpon>AddProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="FrmAboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAboutUs.Designer.cs">
+      <DependentUpon>FrmAboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmavlrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmavlrm.Designer.cs">
+      <DependentUpon>frmavlrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmcrtus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmcrtus.Designer.cs">
+      <DependentUpon>Frmcrtus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCustomer.Designer.cs">
+      <DependentUpon>FrmCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmdlyr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmdlyr.Designer.cs">
+      <DependentUpon>Frmdlyr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFill.Designer.cs">
+      <DependentUpon>FrmFill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmrpsl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmrpsl.Designer.cs">
+      <DependentUpon>frmrpsl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmscn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmscn.Designer.cs">
+      <DependentUpon>frmscn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSearch.Designer.cs">
+      <DependentUpon>FrmSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStaff.Designer.cs">
+      <DependentUpon>FrmStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStock.Designer.cs">
+      <DependentUpon>FrmStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmunpy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmunpy.Designer.cs">
+      <DependentUpon>frmunpy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpdate.Designer.cs">
+      <DependentUpon>FrmUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWelcome.Designer.cs">
+      <DependentUpon>FrmWelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddProducts.resx">
+      <DependentUpon>AddProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAboutUs.resx">
+      <DependentUpon>FrmAboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmavlrm.resx">
+      <DependentUpon>frmavlrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmcrtus.resx">
+      <DependentUpon>Frmcrtus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCustomer.resx">
+      <DependentUpon>FrmCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmdlyr.resx">
+      <DependentUpon>Frmdlyr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFill.resx">
+      <DependentUpon>FrmFill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmrpsl.resx">
+      <DependentUpon>frmrpsl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmscn.resx">
+      <DependentUpon>frmscn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSearch.resx">
+      <DependentUpon>FrmSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStaff.resx">
+      <DependentUpon>FrmStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStock.resx">
+      <DependentUpon>FrmStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmunpy.resx">
+      <DependentUpon>frmunpy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpdate.resx">
+      <DependentUpon>FrmUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWelcome.resx">
+      <DependentUpon>FrmWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10-hotel-logo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10-hotel-logo1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aiga_cashier-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\annual-report-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\annual-report-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attendance report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attendance report1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\booking_for_others_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businesspeople2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businesspeople21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businesspeople22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_19-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_19-5121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checklist-1128024859.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checklist-11280248591.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_user_3-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_user_3-5121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DSC_0018.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fruit-Juice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_10-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_NLG_reporting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_NLG_reporting1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_NLG_reporting2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice-icon-300x300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice-icon-300x3001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paymenticon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo27614.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo276141.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo276142.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Staff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\the-leela-kempinski-kovalam-beach.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash_bin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash_bin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash_bin2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visacard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about_icon.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
